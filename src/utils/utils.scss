@@ -14,6 +14,11 @@
 
 /* Margin */
 
+.m-t-d5{ margin-top: 0.5rem; }
+.m-b-d5{ margin-bottom: 0.5rem; }
+.m-l-d5{ margin-left: 0.5rem; }
+.m-r-d5{ margin-right: 0.5rem; }
+
 .m-t-1{ margin-top: 1rem; }
 .m-b-1{ margin-bottom: 1rem; }
 .m-l-1{ margin-left: 1rem; }
@@ -45,3 +50,13 @@
 .w-50{ width: 50% !important}
 .w-100{ width: 100% !important}
 
+
+.scroll-x {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-y {
+  height: 100%;
+  overflow-y: auto;
+}
