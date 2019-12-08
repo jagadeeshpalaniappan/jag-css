@@ -1,0 +1,26 @@
+{
+  "name": "jag-css",
+  "version": "1.0.0",
+  "description": "Jag Design System (Styles)",
+  "main": "index.js",
+  "license": "AFL-3.0",
+  "scripts": {
+    "start": "nodemon index.js localhost 8080",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "1.18.4",
+    "body-parser": "1.19.0",
+    "express": "4.17.1",
+    "css-loader": "^3.2.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "keywords": ["jag-design-system"]
+}

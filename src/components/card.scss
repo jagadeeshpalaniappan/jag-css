@@ -1,0 +1,29 @@
+$card-background-color: #fff !default;
+$card-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,0.1), 0 0px 0 1px rgba(10,10,10,0.02) !default;
+
+$card-header-background-color: transparent !default;
+$card-content-background-color: transparent !default;
+$card-footer-background-color: transparent !default;
+
+$card-footer-border-top: 1px solid #ededed !default;
+
+
+.card {
+  background-color: $card-background-color;
+  box-shadow: $card-shadow;
+  width: 100%;
+  position: relative;
+}
+
+.card-header {
+  background-color: $card-header-background-color;
+}
+
+.card-body {
+  background-color: $card-content-background-color;
+}
+
+.card-footer {
+  background-color: $card-footer-background-color;
+  border-top: $card-footer-border-top;
+}
