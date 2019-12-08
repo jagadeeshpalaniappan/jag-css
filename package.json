@@ -1,7 +1,7 @@
 {
   "name": "jag-css",
   "version": "1.0.0",
-  "description": "Jag Design System (Styles)",
+  "description": "",
   "main": "index.js",
   "license": "AFL-3.0",
   "scripts": {
@@ -22,5 +22,5 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
-  "keywords": ["jag-design-system"]
+  "keywords": []
 }
