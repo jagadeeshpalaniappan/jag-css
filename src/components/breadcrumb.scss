@@ -1,0 +1,65 @@
+$breadcrumb-item-color: $primary;
+$breadcrumb-item-active-color: grey;
+$breadcrumb-item-separator-color: #b5b5b5;
+
+.breadcrumb{
+
+  ul {
+    @include unselectable;
+
+    display: flex;
+
+    li {
+      display: flex;
+      align-items: center;
+      align-self: stretch;
+
+      .icon {
+        margin-right: 0.5rem;
+      }
+
+      & + li::before {
+        color: $breadcrumb-item-separator-color;
+        content: "/";
+      }
+
+      a {
+        padding: 0 .75em;
+        color: $breadcrumb-item-color;
+      }
+
+      &.is-active a {
+        color: $breadcrumb-item-active-color;
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+
+  }
+
+  // Styles
+  &.breadcrumb--arrow-separator ul {
+    li + li::before {
+      content: "→";
+    }
+  }
+
+  &.breadcrumb--bullet-separator ul {
+    li + li::before {
+      content: "•";
+    }
+  }
+
+  &.breadcrumb--dot-separator ul {
+    li + li::before {
+      content: "·";
+    }
+  }
+
+  &.breadcrumb--greaterthan-separator ul {
+    li + li::before {
+      content: "≻";
+    }
+  }
+}
+
