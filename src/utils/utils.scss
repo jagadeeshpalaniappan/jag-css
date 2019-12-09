@@ -1,5 +1,6 @@
 /* Padding */
 .p-1{ padding: 1rem; }
+.p-2{ padding: 2rem; }
 
 .p-t-1{ padding-top: 1rem; }
 .p-b-1{ padding-bottom: 1rem; }
@@ -26,6 +27,9 @@
 
 .m-x-1{ margin-top: 1rem; margin-bottom: 1rem; }
 .m-y-1{ margin-left: 1rem; margin-right: 1rem; }
+
+.ml-auto { margin-left: auto }
+.mr-auto { margin-right: auto }
 
 
 .m-x-10{
@@ -54,9 +58,11 @@
 .scroll-x {
   width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .scroll-y {
   height: 100%;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
