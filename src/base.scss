@@ -28,7 +28,10 @@ a {
   align-items: center;
   align-self: stretch;
   color: inherit;
-  .item-icon {
+  .item-icon-left {
     margin-right: 0.5rem;
+  }
+  .item-icon-right {
+    margin-left: 0.5rem;
   }
 }
