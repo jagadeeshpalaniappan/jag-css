@@ -1,0 +1,77 @@
+$navbar-bg-color: #fff;
+$navbar-color: $grey;
+$navbar-color-active-color: $primary;
+$navbar-breakpoint: 1024px !default;
+
+
+
+.navbar {
+  display: flex;
+  padding: 0 1rem;
+  width: 100%;
+  min-height: 3.25rem;
+  background-color: $navbar-bg-color;
+  color: $navbar-color;
+
+  .navbar-brand{
+    display: flex;
+    align-items: center;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-menu-mobile {
+    display: none;
+  }
+
+  .navbar-menu-item {
+    margin-left: 1rem;
+  }
+
+
+  @include from($navbar-breakpoint) {
+
+
+    .navbar-menu {
+      display: flex;
+      flex: 1;
+
+      .navbar-menu-left{
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+
+      }
+      .navbar-menu-right{
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        margin-left: auto;
+      }
+
+    }
+
+    .navbar-menu-mobile {
+      display: none;
+    }
+
+  }
+
+  @include until($navbar-breakpoint) {
+
+    .navbar-menu-mobile {
+      display: flex;
+      align-items: center;
+      align-self: stretch;
+      margin-left: auto;
+    }
+
+    .navbar-menu {
+      display: none;
+    }
+
+  }
+
+}
+
+
