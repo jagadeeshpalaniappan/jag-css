@@ -21,3 +21,14 @@ a {
     color: $link-hover;
   }
 }
+
+
+.item {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  color: inherit;
+  .item-icon {
+    margin-right: 0.5rem;
+  }
+}

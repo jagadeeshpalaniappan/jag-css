@@ -1,4 +1,5 @@
 $tab-item-active-border-bottom: 1px solid $primary;
+$tab-item-color: $grey;
 $tab-item-active-color: $primary;
 $tab-rounded-radius: 290486px;
 
@@ -14,16 +15,13 @@ $tab-rounded-radius: 290486px;
     display: flex;
     align-items: center;
     align-self: stretch;
+    color: $tab-item-color;
     padding: 0.5em 1em;
 
     &.is-active {
       border-bottom: $tab-item-active-border-bottom;
       color: $tab-item-active-color;
       margin-bottom: -1px;
-    }
-
-    .tab-item-icon {
-      margin-right: 0.5rem;
     }
   }
 
