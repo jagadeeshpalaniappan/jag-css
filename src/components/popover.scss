@@ -25,10 +25,6 @@ $popover-color: $grey;
       display: block;
     }
   }
-
-  &.is-caret .popover-menu {
-    left: -18px;
-  }
 }
 
 .popover-menu {
@@ -94,9 +90,6 @@ $popover-color: $grey;
     .popover-menu {
       left: auto;
       right: 0;
-    }
-    &.is-caret .popover-menu {
-      right: -22px;
     }
     .popover-menu::before {
       top: 0;
@@ -188,6 +181,13 @@ $popover-color: $grey;
       right: auto;
       top: 10%;
       left: 100%;
+    }
+  }
+
+  &.is-overlay {
+    .popover-menu {
+      top: 0;
+      margin-top: 0;
     }
   }
 
